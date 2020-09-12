@@ -102,8 +102,8 @@ CONSOLE OUTPUT:
 
 Explanation time!
 
-We've added a new function ```aThirdOne()``` (line 12), which console-logs: "this is crazy"; but we are not calling it directly, instead, we are passing the its name as a parameter to ```runFirst()``` (line 10). 
-```runFirst(someFunction)``` it's now expecting a value (line 1) which will be called as if it were a function (line 3).
+We've added a new function ```aThirdOne()``` (line 12), which console-logs: "this is crazy"; but we are not calling it directly, instead, we are passing its name as a parameter to ```runFirst()``` (line 10). 
+```runFirst(someFunction)``` it's now expecting a value (line 1) which will be called as if it were a function (line 3). 
 **Note that the name is different because we pass the value, not the variable name.** 
 This produces a new print in the console: "this is crazy", before we call ```runSecond()``` (line 4).  
 
@@ -174,12 +174,12 @@ Keep in mind that any network call could fail because of many reasons, we should
 
 ## Promises
 ***
-A promise is nothing more than the result of an asynchronous operation. It represents the completion or failure of that result in from of object provided by the promise.
+A promise is nothing more than the result of an asynchronous operation. It represents the completion or failure of that result in form of an object provided by the promise.
 
 #### A promise has 3 different states:
 + ***Pending***: promise result has not been determined yet because the asynchronous operation has not been completed.
-+ ***Fulfilled***: it is when asynchronous operation is finished and the promise returned a value as an object.
-+ ***Rejected***: it takes place when the operation failed.
++ ***Fulfilled***: when asynchronous operation has finished and the promise returns a value as an object.
++ ***Rejected***: takes place when the operation failed.
 ***
 
 ***This is how a promise can be created*** 
@@ -230,7 +230,7 @@ console.log(myPomise);
 ```
 ***
 
-+ ***then***: this method return a promise and it can take up to 2 arguments. One for the resolved promise and one for the rejected promise. Above there is an example that uses ***then*** method and takes one argument.
++ ***then***: this method returns a promise and it can take up to 2 arguments. One for the resolved promise and one for the rejected promise. Above there is an example that uses ***then*** method and takes one argument.
 ```javascript
 	var promise =  new  Promise(function(resolve,reject){
 		resolve("I was resolved and you can see me when you use then method");
